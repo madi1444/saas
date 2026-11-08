@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>madiTASKS</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+ <header class="hero">
+  <h1>madi<span>TASKS</span></h1>
+  <div class="scene" aria-hidden="true">
+   <div class="ring r1"></div><div class="ring r2"></div>
+   <div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+ </header>
+
+ <section class="panel upload" id="drop">
+  <div class="slab">
+   <h2>Файл жүктеу</h2>
+   <p>Файлды осында тартып әкеліңіз немесе батырманы басыңыз</p>
+   <button class="neon" id="btnFile">Файл таңдау</button>
+   <button class="neon pink" id="btnFolder">Жаңа папка</button>
+   <input type="text" id="folderName" placeholder="Папка атауы" hidden aria-label="Папка атауы">
+   <input type="file" id="fileInput" multiple hidden>
+  </div>
+ </section>
+
+ <p class="crumbs" id="crumbs"></p>
+ <section class="grid" id="grid"></section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
